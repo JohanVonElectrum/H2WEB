@@ -82,10 +82,10 @@ body {
   }
 
 :root {
-   --color-purple: #7F4AFF;
-   --color-pseudo-black: #121212;
-   --background-color: #333333;
-   --text-color: #959595;
+    --color-purple: #7F4AFF;
+    --color-pseudo-black: #121212;
+    --background-color: #333333;
+    --text-color: #959595;
 }
 
 .header .logo {
