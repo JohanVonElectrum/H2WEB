@@ -76,7 +76,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Hammersmith One', sans-serif;
+    font-family: "Hammersmith One", sans-serif;
     background-image: url(../images/heroimg.png);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ body {
 }
   
 .header a {
-    font-family: 'Archivo', sans-serif;
+    font-family: "Archivo", sans-serif;
     float: left;
     color: var(--color-purple);
     text-align: center;
@@ -143,9 +143,6 @@ h1 {
     margin: 0;
 }
 
-.hero {
-}
-
 .hero p {
     display: flex;
     align-items: center;
@@ -157,7 +154,7 @@ h1 {
 }
 
 .hero span {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: "M PLUS Rounded 1c", sans-serif;
     color: var(--color-purple);
     font-size: 270px;
     margin: 0;
@@ -196,14 +193,18 @@ h1 {
     text-decoration: none;
     background-color: #333333;
     border: 3px solid var(--color-pseudo-black);
-    transition: .1s border ease-in-out;
-    -o-transition: .1s border ease-in-out;
-    -moz-transition: .1s border ease-in-out;
-    -webkit-transition: .1s border ease-in-out;
-    transition: .1s border-radius ease-in-out;
-    -o-transition: .1s border-radius ease-in-out;
-    -webkit-transition: .1s border-radius ease-in-out;
-    -moz-transition: .1s border-radius ease-in-out;
+    transition: .1s all ease-in-out;
+    -o-transition: .1s all ease-in-out;
+    -moz-transition: .1s all ease-in-out;
+    -webkit-transition: .1s all ease-in-out;
+}
+
+.RButtons:hover {
+    transition: .1s all ease-in-out;
+    -o-transition: .1s all ease-in-out;
+    -moz-transition: .1s all ease-in-out;
+    -webkit-transition: .1s all ease-in-out;
+    border-radius: 10px;
 }
 
 .twitter {
@@ -219,41 +220,21 @@ h1 {
 }
 
 .twitter:hover {
-    transition: .1s border ease-in-out;
-    -o-transition: .1s border ease-in-out;
-    -moz-transition: .1s border ease-in-out;
-    -webkit-transition: .1s border ease-in-out;
     border: 3px solid #0c8cbe;
     background-color: #40aeda;
 }
 
 .twitch:hover {
-    transition: .1s border ease-in-out;
-    -o-transition: .1s border ease-in-out;
-    -moz-transition: .1s border ease-in-out;
-    -webkit-transition: .1s border ease-in-out;
     border: 3px solid #5225a5;
     background-color: #6533c4;
 }
 
 .youtube:hover {
-    transition: .1s border ease-in-out;
-    -o-transition: .1s border ease-in-out;
-    -moz-transition: .1s border ease-in-out;
-    -webkit-transition: .1s border ease-in-out;
     border: 3px solid #cc0000;
-    background-color: #c91919;
+    background-color: #c22d2d;
 }
 
 .redes p span {
     color: #7F4AFF;
     margin: 0 12px 0 0;
-}
-
-.RButtons:hover {
-    transition: .1s border-radius ease-in-out;
-    -o-transition: .1s border-radius ease-in-out;
-    -webkit-transition: .1s border-radius ease-in-out;
-    -moz-transition: .1s border-radius ease-in-out;
-    border-radius: 10px;
 }
