@@ -14,6 +14,7 @@ router.get("/name-uuid/:name", (req, res) => {
     }, function (error, response, body) {
         if (!error && response.statusCode === 200) {
             res.json(body);
+            console.log("API [name-uuid]: ", body);
         }
     });
 });
@@ -24,7 +25,9 @@ router.get("/face/:name", (req, res) => {
         json: true
     }, function (error, response, body) {
         if (!error && response.statusCode === 200) {
-            res.redirect("https://crafatar.com/avatars/" + body.id + "?size=" + req.query.size + "&default=MHF_Steve" + req.query.helm ? "&overlay" : "");
+            const url = "https://crafatar.com/avatars/" + body.id + "?size=" + req.query.size + "&default=MHF_Steve" + (req.query.helm ? "&overlay" : "");
+            res.redirect(url);
+            console.log("API [face]: ", url);
         }
     });
 });
