@@ -187,11 +187,11 @@ h1 {
     color: white;
     font-size: 20px;
     height: 0;
-    margin: 0 0 0 20px;
+    margin: 20px;
     border-radius: 5px;
     padding: 10px 20px;
     text-decoration: none;
-    background-color: #333333;
+    background-color: var(--background-color);
     border: 3px solid var(--color-pseudo-black);
     transition: .1s all ease-in-out;
     -o-transition: .1s all ease-in-out;
@@ -211,9 +211,6 @@ h1 {
     background-color: #4bc1f0;
 }
 
-.twitch {
-    background-color: #7c54c7;
-}
 
 .youtube {
     background-color: #ca3e3e;
@@ -224,10 +221,6 @@ h1 {
     background-color: #40aeda;
 }
 
-.twitch:hover {
-    border: 3px solid #5225a5;
-    background-color: #6533c4;
-}
 
 .youtube:hover {
     border: 3px solid #cc0000;
@@ -237,4 +230,80 @@ h1 {
 .redes p span {
     color: #7F4AFF;
     margin: 0 12px 0 0;
+}
+
+/* Inicio de Members Page */
+
+.genericPlace {
+    border: 3px solid red;
+    padding: 30px;
+    
+}
+
+.genericContent {
+    max-height: 100px;
+    background-color: var(--background-color);
+    padding: 30px;
+    color: var(--text-color);
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid red;
+}
+
+.RButtonsM {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    height: 0;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 20px 20px;
+    text-decoration: none;
+    background-color: var(--background-color);
+    border: 3px solid var(--color-pseudo-black);
+    transition: .1s all ease-in-out;
+    -o-transition: .1s all ease-in-out;
+    -moz-transition: .1s all ease-in-out;
+    -webkit-transition: .1s all ease-in-out;
+}
+
+.RButtonsM:hover {
+    transition: .1s all ease-in-out;
+    -o-transition: .1s all ease-in-out;
+    -moz-transition: .1s all ease-in-out;
+    -webkit-transition: .1s all ease-in-out;
+    border-radius: 10px;
+}
+
+.genericRandomDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.genericContent span {
+    color: var(--color-purple);
+}
+
+.twitch {
+    background-color: #7c54c7;
+}
+
+.twitch:hover {
+    border: 3px solid #5225a5;
+    background-color: #6533c4;
+}
+
+.youtube {
+    background-color: #ca3e3e;
+}
+
+.youtube:hover {
+    border: 3px solid #cc0000;
+    background-color: #c22d2d;
 }

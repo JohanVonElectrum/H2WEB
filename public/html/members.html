@@ -21,10 +21,19 @@
         </div>
     </div>
 
-    <input type="search" name="search" id="search" oninput="search('members', this.value);" placeholder="Busca a un miembro..." autocomplete="off">
-    <ul id="members">
+    <input class="container" type="search" name="search" id="search" oninput="search('members', this.value);" placeholder="Busca a un miembro..." autocomplete="off">
+    <ul id="members" class="genericPlace container">
         <% members.forEach(function(member) { %>
-            <li id="<%= member.name%>"><img src="/api/minecraft/face/<%= member.minecraft%>?size=16&helm=false"><%= member.name%></li>
+            <li class="genericContent" id="<%= member.name%>">
+                <div>
+                    <h2><span>Nombre:</span> <%= member.name%></h2>
+                </div>
+                <div class="genericRandomDiv">
+                    <a class="twitch RButtonsM" href="<%= member.twitch%>" target="blank">Twitch</a>
+                    <a class="youtube RButtonsM" href="<%= member.youtube%>" target="blank">Youtube</a>
+                    <img class="genericImg" src="/api/minecraft/face/<%= member.minecraft%>?size=70&helm=true">
+                </div>
+            </li>
         <% }); %>
     </ul>
 </body>
