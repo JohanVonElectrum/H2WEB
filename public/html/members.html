@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/media.css">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="../js/search.js"></script>
@@ -20,13 +21,14 @@
             </div>
         </div>
     </div>
-
-    <input class="container" type="search" name="search" id="search" oninput="search('members', this.value);" placeholder="Busca a un miembro..." autocomplete="off">
+    <div class="searchArea container">
+        <input type="search" name="search" id="search" oninput="search('members', this.value);" placeholder="Busca a un miembro..." autocomplete="off">
+    </div>
     <ul id="members" class="genericPlace container">
         <% members.forEach(function(member) { %>
             <li class="genericContent" id="<%= member.name%>">
                 <div>
-                    <h2><span>Nombre:</span> <%= member.name%></h2>
+                    <h2><%= member.name%></h2>
                 </div>
                 <div class="genericRandomDiv">
                     <a class="twitch RButtonsM" href="<%= member.twitch%>" target="blank">Twitch</a>
