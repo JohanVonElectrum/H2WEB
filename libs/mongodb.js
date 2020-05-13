@@ -18,6 +18,6 @@ module.exports = {
         client.db(db).collection(collection).findOne(query, (err, document) => callback);
     },
     findAll(db, collection, callback) {
-        client.db(db).collection(collection).find({}).toArray((err, documents) => { callback(err, documents); });
+        client.db(db).collection(collection).find({}).sort({name: 1}).toArray((err, documents) => { callback(err, documents); });
     }
 }

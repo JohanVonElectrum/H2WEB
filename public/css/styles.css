@@ -70,7 +70,7 @@
 
 body {
     background: var(--background-color);
-    -ms-overflow-style: none; 
+    -ms-overflow-style: none;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -117,7 +117,7 @@ html {
     background-color: var(--color-pseudo-black);
     padding: 20px 10px;
 }
-  
+
 .header a {
     font-family: "Archivo", sans-serif;
     float: left;
@@ -141,7 +141,7 @@ html {
     -moz-transition: .15s color;
     -webkit-transition: .15s color;
 }
-  
+
 .header-right {
     float: right;
 }
@@ -246,7 +246,7 @@ h1 {
 
 .genericPlace {
     padding: 0 30px 30px 30px   ;
-    
+
 }
 
 .genericContent {
@@ -367,7 +367,7 @@ h1 {
     border: 2px solid var(--color-purple);
 }
 
-/* Media query */ 
+/* Media query */
 
 @media screen and (max-width: 700px) {
     .header a {
@@ -376,6 +376,15 @@ h1 {
 }
 
 @media screen and (max-width: 1270) {
-    
+
 }
 
+.bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(../images/heroimg.png);
+}

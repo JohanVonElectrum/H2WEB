@@ -22,9 +22,14 @@ app.get("/", (req, res) => {
 });
 
 app.get("/members", (req, res) => {
+    if (!req.query.force) { res.redirect("/soon"); return; }
     mongodb.findAll("web", "members", (err, documents) => {
         res.render("members", {members: documents});
     });
+});
+
+app.get("/soon", (req, res) => {
+    res.render("soon");
 });
 
 httpServer.listen(process.env.PORT, () => {

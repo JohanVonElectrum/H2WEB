@@ -11,6 +11,7 @@
     <script src="../js/search.js"></script>
 </head>
 <body>
+    <div class="bg"></div>
     <div class="header">
         <div class="container">
             <img class="logo" src="../images/H2_Logo.png" width="50px" height="50px" alt="">
@@ -31,8 +32,8 @@
                     <h2><%= member.name%></h2>
                 </div>
                 <div class="genericRandomDiv">
-                    <a class="twitch RButtonsM" href="<%= member.twitch%>" target="blank">Twitch</a>
-                    <a class="youtube RButtonsM" href="<%= member.youtube%>" target="blank">Youtube</a>
+                    <% if (member.youtube != "") { %> <a class="youtube RButtonsM" href="<%= member.youtube%>" target="blank">Youtube</a><% } %>
+                    <% if (member.twitch != "") { %> <a class="twitch RButtonsM" href="<%= member.twitch%>" target="blank">Twitch</a><% } %>
                     <img class="genericImg" src="/api/minecraft/face/<%= member.minecraft%>?size=70&helm=true">
                 </div>
             </li>

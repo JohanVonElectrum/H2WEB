@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/heroimg_3.png);
+    overflow: hidden;
+}
+
+div {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 75%);
+}
+
+h1 {
+    font-size: 5em;
+    color: #959595;
+}
