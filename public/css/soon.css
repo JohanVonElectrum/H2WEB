@@ -1,12 +1,18 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Hammersmith One", sans-serif;
+}
+
+:root {
+    --color-purple: #7F4AFF;
+    --color-pseudo-black: #121212;
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url(../images/heroimg_3.png);
+    background-image: url(../images/Heroimg_2.png);
     overflow: hidden;
 }
 
@@ -16,10 +22,10 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 75%);
+    /*background: radial-gradient(circle, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 75%);*/
 }
 
 h1 {
     font-size: 5em;
-    color: #959595;
+    color: var(--color-pseudo-black);
 }
