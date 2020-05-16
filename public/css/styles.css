@@ -153,7 +153,7 @@ h1 {
     height: calc(100vh - 94px);
     justify-content: flex-start;
     color: var(--text-color);
-    font-size: 30px;
+    font-size: 1px;
     max-height: 100%;
 }
 
