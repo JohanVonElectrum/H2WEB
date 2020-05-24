@@ -309,12 +309,18 @@ h1 {
     justify-content: center;
 }
 
+.RButtons a {
+    position: static;
+    margin: 20px;
+    padding: 20px 20px;
+}
+
 .twitch {
     background-color: #7c54c7;
 }
 
 .twitch:hover {
-    border: 3px solid #5225a5;
+    border: 3px solid #490eb8;
     background-color: #6533c4;
 }
 
@@ -359,6 +365,10 @@ h1 {
     -moz-transition: .1s all ease-in-out;
     -webkit-transition: .1s all ease-in-out;
     border: 2px solid var(--color-purple);
+}
+
+.genericImg {
+    margin: 20px;
 }
 
 /* Media query */
